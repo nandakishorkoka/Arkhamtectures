@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+skinparam actorStyle awesome
+
+:Transactional Customer: as transactionalCustomer
+:Client:
+:Engaged Customer: as engagedCustomer
+:Support Community: as supportCommunity
+(Create Profile) as createProfile
+(Preference personalization) as preferencePersonalization
+(Provide dietary needs) as provideDietaryNeeds
+
+(Create Forums) as createForums
+(Modify Forums) as modifyForums
+(Delete Forums) as deleteForums
+
+(Create Blogpost) as createBlogpost
+(Modify Blogpost) as modifyBlogpost
+(Delete Blogpost) as deleteBlogpost
+
+(Create Events) as createEvents
+(Create Classes) as createClasses
+(Modify Classes) as modifyClasses
+(Delete Classes) as deleteClasses
+
+Dietitian -> (Provide generic advice)
+Dietitian -> (Access to customer medical information)
+Dietitian -> (Send message)
+Dietitian -> (Receive message)
+engagedCustomer -> (Send message)
+engagedCustomer -> (Receive message)
+
+Clinics -> (Conduct test every 3 months)
+engagedCustomer -> (Take a test every 3 months)
+Clinics -> (Analyze results)
+
+Client -> createProfile
+
+engagedCustomer -> preferencePersonalization
+engagedCustomer -> provideDietaryNeeds
+
+System -> (Send onboarding email to Transactional Customer)
+
+@enduml

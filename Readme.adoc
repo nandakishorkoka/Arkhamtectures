@@ -1,0 +1,116 @@
+= Farmacy Family Architecture Proposal
+Team Arkhamtectures
+3.0, July 29, 2022: AsciiDoc article template
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+This is an Architecture proposal by Arkhamtectures Team to enhance existing https://github.com/ldynia/archcolider[Farmacy Foods] to further their customer engagement.
+
+== Overview
+
+Primary goals
+
+* develop relationships between <<engaged-customer, engaged customers>> and nurture those relationships
+* convert transactional customers to <<engaged-customer, engaged customers>>
+* generate analytical data from medical information to demonstrate the benefits of Farmacy Foods
+
+When a transactional customer purchases a meal, Farmacy Family will generate an email elucidating additional benefits available for becoming an <<engaged-customer, engaged customer>>.
+
+Thus, the overall goal of Farmacy Family is to connect, gather, analyze, and communicate.
+
+=== Definitions
+
+[#transactional-customer]
+. Transactional Customer: Customer of FFoods
+[#engaged-customer]
+. Engaged Customer - Customer of both FFamily and FFoods
+[#support-community]
+. Support Community - Engaged members within a <<community>>
+[#client]
+. Client: low income, poverty level, homeless, college students, educators, senior citizens
+[#community]
+. Community - small group of <<engaged-customer, engaged customers>> within a neighborhood area
+
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+== Requirements
+
+* Add a new system to manage customer profiles, allowing <<community>> engagement, personalization around preferences and dietary needs.
+* Support geographical trend analysis to hone Farmacy Family’s ability to optimize the foods delivered to fridges (an additional integration point To Farmacy Foods).
+* Support both push and pull models for <<community>> engagement. In other words, Farmacy Family will manage forums, emails, and create connections between similar demographics. Farmacy Family needs <<transactional-customer, Transactional Customer>> information for outreach purposes. The engagement model includes subscriptions, forums, reference material, class information, and other media that supports Food-as-medicine.
+* eDietian has access to customer profile to improve advice and monitoring of customers. Additionally, the customer and dietitian can interact via messages.
+* Farmacy Family wants to improve the distribution and potential food waste from having the wrong mix of foods in a particular fridge.
+* Farmacy Family will include medical profile information and the ability to share information with medical service providers.
+* Farmacy Family customers can customize how much profile information they want to allow the <<community>> to see, at a fine-grained level.
+* Farmacy Family has relationships with third party providers (clinics, doctors, etc) that have access to more analytical data to improve engagement (for example, regional dietary observations).
+* Add Farmacy Family user interface to existing Foods interface, which is currently a Reactive monolith. Create a holistic UX for both food and Farmacy Family to support engagement model.
+
+include::Opportunity Details/Technical_Details.adoc[leveloffset=+3]
+
+:kroki-plantuml-include:diagrams/farmacyFamily-usecases.puml
+
+
+include::diagrams/farmacyFamily-usecases.puml[svg]
+
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== Fifth level heading
+
+[quote,firstname lastname,movie title]
+____
+I am a block quote or a prose excerpt.
+I am subject to normal substitutions.
+____
+
+[verse,firstname lastname,poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+== First level heading
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+
+== First level heading
+
+This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
+This is an attribute reference {url-quickref}[that links this text to the AsciiDoc Syntax Quick Reference].
