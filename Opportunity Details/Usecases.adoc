@@ -1,0 +1,40 @@
+
+|===
+|Usecase |Actor |Goal Description
+
+
+|Create Profile |Actor |Goal Description
+|Preference personalization |engagedCustomer | To share information with medical service providers and dietitians. And how much profile information they want to allow the community to see.
+|Provide dietary needs |engagedCustomer |Goal Description
+|Create Forums |Admin | To improve the community engagement.
+|Modify Forums |Admin | To improve the community engagement.
+|Subscribe to Forum | transactionCustomer, engagedCustomer |
+|Unsubscribe to Forum | engagedCustomer |
+|Delete Forums |Admin | To improve the community engagement.
+
+|Create Blogpost |Dietitian, Clinician |Goal Description
+|Modify Blogpost |Dietitian, Clinician |Goal Description
+|Delete Blogpost |Dietitian, Clinician |Goal Description
+
+|Create Events |Dietitian, Clinician |To improve the community engagement and awareness.
+|Create Classes |Dietitian, Clinician |To improve the community engagement and overall wellness.
+|Modify Classes |Dietitian, Clinician |To improve the community engagement and overall wellness.
+|Delete Classes |Dietitian, Clinician |To improve the community engagement and overall wellness.
+|Enroll to Events and classes |engagedCustomer |To improve one's wellness.
+|Cancel event or class enrolment |engagedCustomer |To improve one's wellness.
+
+|Provide generic advice | Dietitian |
+|Access to customer medical information | Dietitian, Clinician |
+|Send message | Dietitian, engagedCustomer | To advice customers on their diet
+|Receive message | Dietitian, engagedCustomer | To advice customers on their diet
+
+| Send onboarding email to Transactional Customer | System |
+| Conduct test every 3 months | Clinician |
+| Analyze results | Clinician |
+| Take a test every 3 months | engagedCustomer |
+
+
+| Support geographical trend analysis | ?? |
+| Tagging food to dietary choices | System | To improve the distribution and potential food waste from having the wrong mix of foods in a particular fridge.
+| Rank dietary choices by Farmacy Food Fridge | System | To make a more informed food mix by dietary choices of the community
+|===
