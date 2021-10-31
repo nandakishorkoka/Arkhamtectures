@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+repeat :System checks if the Customer is Engagement Customer;
+    if(is Transactional Customer) then (No)
+        stop;
+    endif
+      ->Yes;
+  :Send on-boarding email;
+  repeat while (Transactional Customer clicks on the email link) is (No)
+    -> Yes;
+    :Bring Customer to profile management page;
+    :Capture Customer dietary needs;
+    :Capture preferences to share profile information with community;
+    :Capture preferences to share medical information with hospitals;
+    :Capture preferences to share dietary information with dietitians;
+    :Capture notification preferences;
+    :Suggest forum subscriptions by matching preferences;
+    :Customer migration to engagement experience complete;
+
+stop
+
+@enduml
